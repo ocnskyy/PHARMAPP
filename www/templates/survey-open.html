@@ -1,0 +1,32 @@
+<ion-modal-view>
+  <ion-header-bar class="header">
+    <button class="button button-clear icon ion-chevron-left" ng-click="closeQuestions()"></button>
+    <h1>{{survey.title}}</h1>
+    <button class="button button-clear icon ion-chevron-left" style="color: #00acc2;"></button>
+  </ion-header-bar>
+  <ion-content class="survey-open-field login-field">
+    <img src="{{survey.image}}" alt="not loaded">
+ <form ng-submit="doSurvey()">
+    <div class="list">
+      <div ng-repeat="question in survey.questions" >
+      <br>
+        {{question.question}}
+
+      <!-- <label class=""> -->
+      <div ng-if="question.options.length"  ng-repeat="option in question.options" >
+         <input type="radio" value="{{option.value}}" ng-model="questionData.answer[question.id]" style="margin-bottom: 6px;">
+         {{option.value}}
+      </div>
+         
+      <!-- </label> -->
+      <label ng-if="!question.options.length" class="item item-input field-name">
+          <input type="text" placeholder="" ng-model="questionData.answer[question.id]">
+      </label>
+      </div>
+
+      <button type="submit" class="button button-block join-button">ОТПРАВИТЬ АНКЕТУ</button>
+      
+    </div>
+  </form>
+  </ion-content>
+</ion-modal-view>

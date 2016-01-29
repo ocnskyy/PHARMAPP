@@ -1,0 +1,44 @@
+<ion-modal-view>
+  <ion-header-bar class="header" style="z-index:2 !important;">
+    <div class="seminar-registration"></div>
+    <button class="button button-clear icon ion-chevron-left" ng-click="closeSeminars()"></button>
+    <h1 style="text-align:left;margin-left:15%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;margin-right:5%;">{{seminar.title}}</h1>
+    <button class="button button-clear icon ion-chevron-left" style="color: #00acc2;"></button>
+  </ion-header-bar>
+  <ion-content class="survey-open-field login-field seminar-open" scroll="false">
+    <div class="seminar-registration" ng-click="out($event); $event.stopPropagation()">
+      <div>регистрация на семинар</div>
+      <form ng-submit="doSeminar()">
+
+        <!-- <ionic-datepicker input-obj="datepickerObject">
+          <button class="button button-block button-positive">{{datepickerObject.inputDate | date:'dd - MMMM - yyyy'}}</button>
+        </ionic-datepicker> -->
+        <div class="registration-input">
+          <input type="text" value="" placeholder="Контактный номер" ng-model="seminarData.contact">
+          <textarea placeholder="Укажите, во сколько с вами лучше связаться" rows="4" ng-model="seminarData.date_sign"></textarea>
+          <!-- <input type="text" rows="4" value="" placeholder="Дополнительные условия"> -->
+          <button ng-click="nowDate()">сейчас</button>
+          <div class="seminar-footer">
+            <button type="submit">отправить</button>
+          </div>
+
+
+        </div>
+        
+        <!-- <input type="date" format="yyyy-MM-dd" value="" placeholder="" ng-model="seminarData.date"> -->
+        
+        
+      </form>
+
+    </div>
+    <img src="{{seminar.image}}" alt="not loaded">
+      <div class="seminar-description">
+        <h4>{{seminar.description}}</h4>
+      </div>
+      <!-- <ion-footer-bar> -->
+      <div class="seminar-footer bar bar-footer" style="margin-left:15%;">
+        <button ng-click="showSeminar()" style="display:block;">ПОЙДУ</button>
+      </div>
+      <!-- </ion-footer-bar> -->
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,15 @@
+<ion-view view-title="Main">
+  <ion-content>
+  	<ion-slide-box pager-click="navSlide(index)" auto-play="true" does-continue="true" style="height:150px;" delegate-handle="main-slider">
+        <ion-slide ng-repeat="index in bannerData" >
+            <div class="box" style="background-image: url({{index.image}});background-size: cover;height:400px;"></div>
+        </ion-slide>
+    </ion-slide-box>
+    <!-- <div class="owl-carousel" style="height:200px;">
+            <div ng-repeat="index in bannerData">
+            index
+                <img ng-src="{{index.image}}" alt="wowo">
+            </div>
+    	</div> -->
+  </ion-content>
+</ion-view>

@@ -1,0 +1,451 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+	font-family: roboto-condenced-light;
+	src: url(../font/RobotoCondensed-Light.ttf);
+}
+@font-face {
+	font-family: roboto-medium;
+	src: url(../font/Roboto-Medium.ttf);
+}
+@font-face {
+	font-family: roboto-light;
+	src: url(../font/Roboto-Light.ttf);
+}
+
+.header {
+	background-color: #00acc2;
+	text-align: center;
+	color: #fff;
+	padding: 0px;
+	vertical-align: middle;
+	width: 100%;
+	/*margin: 0 auto;*/
+}
+.header h1 {
+	color: #fff;
+	/*margin: 0 auto;*/
+	font-family: roboto-condenced-light;
+	/*width: 100%;*/
+	text-align: center;
+	width: 100%;
+	margin-top: 0px;
+}
+.enter-button {
+	background-color: #00acc2;
+	text-align: center;
+	color: #fff;
+	margin: auto;
+	margin-top: 10px;
+	width: 50%;
+	font-size: roboto-medium;
+}
+.join-button {
+	font-family: roboto-medium;
+	margin: 0px;
+	background-color: #00acc2 !important;
+	border: none !important;	
+	color: #fff !important;
+}
+.recovery-button {
+	font-family: roboto-medium;
+	margin: 0px;
+	background-color: #00acc2 !important;
+	border: none !important;	
+	color: #fff !important;
+}
+.list {
+	text-align: center;
+	width: 80%;
+	margin: auto;
+}
+.list label {
+	border: 1px solid #00acc2;
+	margin-bottom: 15px;
+	height: 40px;
+	text-align: left;
+}
+.list input {
+	font-family: roboto-light;
+}
+.ion-help {
+	border: 1px solid #00acc2;
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 50%;
+	background: rgba(0,0,0,0.6);
+	position: fixed;
+	display: none;
+	z-index: 999;
+	color: white;
+}
+.login-field {
+	/*height: 100%;*/
+    color: #000;
+ /*   min-height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;*/
+    background: url(../img/backgrounds/3.jpg);
+    background-size: cover;  
+}
+.title {
+	text-align: center;
+	font-family: roboto-medium;
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+.title-2 {
+	text-align: center;
+	font-family: roboto-light;
+	color: #000;
+}
+.footer {
+	width: 100%;
+	background: url(../img/backgrounds/2.jpg);
+	font-family: roboto-medium;
+	height: 13%;
+	vertical-align: middle;
+	text-align: center;
+}
+.footer h2 {
+	margin-top: 3%;
+	color: #00acc2;
+	width: 100%;
+	text-align: center;
+	/*margin: 0 auto;*/
+}
+.header .ion-chevron-left {
+	color: #fff;
+	padding-left: 10px;
+	width: 7%;
+	/*display: none;*/
+	position: absolute;
+	top: 5px;
+}
+.bar .button.button-clear {
+	padding-left: 10px;
+}
+.ion-checkbox {
+	vertical-align: middle;
+	height: auto !important;
+	border: 0px !important;
+	overflow: visible !important;
+	white-space: normal !important;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+}
+.ion-checkbox .input-label {
+	font-size: 12px;
+	width: 100%;
+}
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+    background: #00acc2;
+    border-color: #00acc2;
+}
+.agreement {
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999;
+    color: #fff;
+    padding: 5%;
+    text-align: justify;
+    display: none;
+}
+
+.menu-main-yoyo .list{
+	margin: 0px;
+	width: 100%;
+	font-family: roboto-medium;
+	height: 100% !important;
+}
+.menu-main-yoyo .scroll {
+	height: 100%;
+}
+.menu-main-yoyo .list ion-item:not(:first-child) {
+	text-align: left;
+	text-transform: uppercase;
+}
+.menu-main-yoyo .list ion-item:not(:first-child), .menu-main-yoyo .list ion-item:not(:last-child), {
+	border-bottom: 3px dotted grey !important;
+	border-top: none;
+	margin-bottom: 5px;
+}
+.menu-main-yoyo .list ion-item:last-child {
+	border: none;
+	position: fixed;
+	bottom: 0px;
+}
+.user {
+	background-color: #d9f2f6;
+	text-align: left;
+	font-family: roboto-light;
+}
+
+.user > a {
+	background: none !important;
+	padding-right: 16px !important;
+}
+.user img {
+	margin-right: 10px;
+}
+.user span {
+	position: absolute;
+	top: 20%;
+	font-family: roboto-light;
+}
+#user_name {
+	top: 35%;
+	position: absolute;
+	font-family: roboto-medium;
+}
+.has-error+.my-error {
+	color: red;
+}
+.my-error {
+	color: red;
+}
+ion-header-bar {
+	background-color: #00acc2 !important;
+	color: #fff !important;
+}
+ion-header-bar .title {
+	content: 'privet';
+}
+.button-clear {
+	color: #fff !important;
+}
+.main-slider {
+
+	/*text-align: center;
+	height: 150px;
+	margin-bottom: 20px;*/
+}
+.main-slider div {
+	height: 150px;
+} 
+
+.main-navigation {
+	text-align: center;
+	/*width: 96%;*/
+	margin: 0 auto;
+}
+
+.main-navigation a {
+	width: 100%;
+	background-color: #00acc2;
+	color: #fff;
+	border: none;
+	margin-bottom: 5px;
+	font-family: roboto-light;
+	text-align: right;
+	padding-right: 25px;
+}
+.main-navigation .activated {
+	background-color: #00acc2 !important;
+}
+.main-field a {
+	color: #fff;
+	text-decoration: none;
+}
+.main-field {
+	background: url(../img/backgrounds/3.jpg);
+    background-size: cover;  
+}
+.main-field img {
+	width: 100%;
+}
+.main-partners {
+	/*width: 96%;*/
+	text-align: center;
+	margin: 0 auto;
+	/*position: relative;*/
+}
+.main-partners .col, .main-banners .col {
+	/*box-shadow: 3px 3px 3px #E8E8E8;*/
+	/*margin: 0px 2px 0px 2px;*/
+	font-family: roboto-medium;
+	text-align: center;
+	position: relative;
+	
+
+}
+.main-partners img , .main-banners img {
+	width: 100%;
+	z-index: 10;
+	object-fit: cover;
+	-webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+}
+.main-banners img {
+	height: 130px;
+}
+
+.main-banners .title, .main-slider-title {
+	position: absolute !important;
+	background: rgba(255,255,255,0.8) !important;
+	/*margin-top: 10px;*/
+	z-index: 20 !important;
+	bottom: 30px !important;
+	width: 70% !important;
+	text-align: left !important;
+	color: #000 !important;
+	font-family: roboto-light !important;
+	padding-left: 5px !important;
+
+}
+.survey-field {
+    background: url(../img/backgrounds/3.jpg) !important;
+    background-size: cover;  
+}
+.survey-field .survey {
+	width: 98%;
+	margin: 1%;
+	/*margin: 0 auto;*/
+	text-align: left;
+}
+
+.survey-field .survey .col-33 {
+	/*background: url(../img/survey.jpg);*/
+	width: 31%;
+	height: 130px;
+	margin: 1% 1% 0;
+	border-radius: 7px;
+	font-family: roboto-light;
+	padding: 0px;
+	position: relative;	
+}
+.survey-field .survey .col-33 .footer {
+	background: rgba(0,0,0,0.4);
+	color: #fff;
+	display: block;
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+	border-radius: 4px;
+	height: 40px;
+	font-family: roboto-light;
+	font-size: 0.8em;
+}
+.survey-field .survey .col-33 .footer div {
+	float: left;
+	width: 50%;
+	line-height: 1;
+}
+
+.survey-field .survey .col-33 .footer .points {
+	background: #00acc2;
+	position: relative;
+	left: 10px;
+	border-radius: 2px;
+	/*height: 25px;*/
+	padding: 5px;
+	top: 4px;
+	width: 100%;
+	text-transform: uppercase;
+}
+.survey-open-field img {
+	width: 100%;
+	height: 160px;
+}
+.survey-open-field {
+	width: 100%;
+}
+
+.survey-open-field .list {
+	text-align: left;
+	font-family: roboto-light;
+	/*margin-top: 10px;*/
+}
+.survey-open-field .list button {
+	font-family: roboto-medium;
+}
+.seminar-description {
+	padding: 5px 5px;
+	
+}
+.seminar-description h4 {
+	font-family: roboto-light !important;
+	font-weight: 400 !important;
+}
+.seminar-title {
+	width: 100% !important;
+}
+.seminar-footer {
+	bottom: 15px;
+	position: absolute;
+	z-index: 2;
+	width: 70%;
+}
+.seminar-footer button {
+	font-family: roboto-medium;
+	color: #fff;
+	background: #00acc2;
+	border: none;
+	font-size: 1.75em;
+	margin: 0 auto;
+	width: 100%;
+}
+.seminar-open .scroll {
+	height: 100% !important;
+}
+.seminar-registration {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	text-align: center;
+}
+.seminar-registration div:nth-child(1) {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	font-family: roboto-medium;
+	text-align: center;
+	margin-top: 5%;
+}
+.reg-date {
+	z-index: 51;
+	width: 80%;
+}
+.seminar-registration form{
+	height: 100%;
+}
+.seminar-registration .registration-input {
+	width: 70%;
+	margin: 0 auto;
+	height: 100%;
+}
+.seminar-registration .registration-input input, .seminar-registration .registration-input textarea {
+	width: 100%;
+	resize: none;
+	margin-bottom: 10px;
+	/*height: 2em;*/
+}
+
+.seminar-registration button {
+	text-transform: uppercase;
+	color: #fff;
+	background: #00acc2;
+	border: none;
+	font-family: roboto-medium;
+	font-size: 1.5em;
+	width: 100%;
+}
+.seminar-registration button:nth-child(2) {
+
+}
+.seminar-registration .registration-input input:nth-child(2) {
+	/*height: 6em;*/
+	vertical-align: top;
+}
+

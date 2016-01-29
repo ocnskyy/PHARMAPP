@@ -1,0 +1,93 @@
+<ion-view>
+  <ion-content class="main-field">
+    <!-- <div class="row main-slider"> -->
+    	<!-- <div class="col"> -->
+            <ion-slide-box pager-click="navSlide(index)" auto-play="true" does-continue="true" delegate-handle="main-slider" slide-interval="
+            3000" style="height: 130px;width: 94%;margin: 0 auto;margin-top: 10px;">
+                <ion-slide ng-repeat="index in bannerData">
+                    <div class="box" style="background-image: url({{index.image}});background-size: cover;height:130px;" ng-click="openLink(index.link)">
+                        <div class="main-slider-title" id="title-1">
+                            {{index.title}}
+                        </div>
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+    	<!-- </div> -->
+    <!-- </div> -->
+
+    <div class="row main-navigation">
+    	<div class="col col-50">
+    		<a href="#/app/surveys" class="button" ng-click="loadSurveys()"><i class="fa fa-pencil-square-o" style="left: 10px;position:absolute;top:30%;"></i>АНКЕТЫ</a>
+    		<a href="#/app/seminars" class="button" ng-click="loadSeminars()"><i class="fa fa-file-image-o" style="left: 10px;position:absolute;top:30%;"></i>СЕМИНАРЫ</a>
+    	</div>
+    	<div class="col col-50">
+    		<a href="#/app/test" class="button" ng-click="test()"><i class="fa fa-gift" style="left: 10px;position:absolute;top:30%;"></i>АКЦИИ</a>
+    		<a href="#" class="button"><i class="fa fa-file-image-o" style="left: 10px;position:absolute;top:30%;"></i>ОТЧЕТЫ</a>
+    	</div>
+    </div>
+	<h4 style="text-align:center;font-family:roboto-light;color:#000;">НАШИ ПАРТНЕРЫ</h4>
+    <div class="row main-partners">
+    	<div class="col"><img src="img/farmin.jpeg" alt="farmin"></div>
+    	<div class="col"><img src="img/farmin.jpeg" alt="farmin"></div>
+    	<div class="col"><img src="img/farmin.jpeg" alt="farmin"></div>
+    	<div class="col"><img src="img/farmin.jpeg" alt="farmin"></div>
+    </div>
+    <div class="row main-banners">
+    	<div class="col col-50">
+    		<img id="pos-2">
+            <div class="title" id="title-2">
+                privet
+            </div>
+    		<!-- <p>Описание</p> -->
+    	</div>
+    	<div class="col col-50">
+    		<img alt="some" id="pos-3">
+            <div class="title" id="title-3">
+                privet
+            </div>
+    		<!-- <p>Описание</p> -->
+    	</div>
+    </div>
+    <div class="row main-banners">
+    	<div class="col">
+    		<img alt="some" id="pos-4">
+            <div class="title" id="title-4">
+                privet
+            </div>
+    		<!-- <p>Описание</p> -->
+    	</div>
+    </div>
+    <div class="row main-banners">
+    	<div class="col">
+    		<img alt="some" id="pos-5">
+            <div class="title" id="title-5">
+                privet
+            </div>
+    		<!-- <p>Описание</p> -->
+    	</div>
+    	<div class="col">
+    		<img alt="some" id="pos-6">
+            <div class="title" id="title-6">
+                privet
+            </div>
+    		<!-- <p>Описание</p> -->
+    	</div>
+    	<div class="col">
+    		<img alt="some" id="pos-7">
+            <div class="title" id="title-7">
+                privet
+            </div>
+    		<!-- <p>Описание</p> -->
+    	</div>
+    </div>
+    <div class="row main-banners">
+        <div class="col">
+            <img alt="some" id="pos-8">
+            <div class="title" id="title-8">
+                privet
+            </div>
+            <!-- <p>Описание</p> -->
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

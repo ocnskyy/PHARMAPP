@@ -1,0 +1,102 @@
+<ion-modal-view class="registration-page">
+  <ion-header-bar class="header">
+    <button class="button button-clear icon ion-chevron-left" ng-click="closeReg()"></button>
+    <h1>PHARMAPP</h1>
+    <!-- <button class="button button-clear icon ion-chevron-left" style="color: #00acc2;"></button> -->
+  </ion-header-bar>
+  <ion-content class="login-field">
+    <div class="agreement" ng-show="agreementCheck">
+      <h3>СОГЛАШЕНИЕ</h3>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <h2 class="title" id="zalupa">РЕГИСТРАЦИЯ</h2>
+    <p class="title-2">Для регистрации в приложении заполните соответствующие поля</p>
+    <form ng-submit="doReg()">
+    
+      <div class="list">
+      <!-- <div>
+        {{regOutput}}
+      </div> -->
+        <label class="item item-input field-name">
+          <input type="text" placeholder="Имя пользователя" ng-model="regData.name" ng-focus="removeError(1)">
+        </label><div class="my-error" id="error1"></div>
+         <label class="item item-input field-login">
+          <input type="text" placeholder="Логин" ng-model="regData.login" ng-focus="removeError(2)">
+        </label><div class="my-error" id="error2"></div>
+        <label class="item item-input field-email">
+          <input type="text" placeholder="Почтовый ящик" ng-model="regData.email" ng-focus="removeError(3)">
+        </label><div class="my-error" id="error3"></div>
+        <label class="item item-input field-password">
+          <input type="password" placeholder="Пароль" ng-model="regData.password" ng-focus="removeError(4)">
+        </label><div class="my-error" id="error4"></div>
+        <label class="item item-input field-re_password">
+          <input type="password" placeholder="Повторите пароль" ng-model="regData.re_password" ng-focus="removeError(5)">
+        </label><div class="my-error" id="error5"></div>
+        
+        <label class="item item-input item-select field-city_id">
+          <div class="input-label">
+            Город
+          </div>
+          <select ng-model="regData.city_id" ng-focus="removeError(6)">
+            <option ng-repeat="city in cities" value="{{city.id}}">{{city.name}}</option>
+          </select>
+        </label><div class="my-error" id="error6"></div>
+
+        <label class="item item-input item-select field-education_id">
+          <div class="input-label">
+            Образование
+          </div>
+          <select ng-model="regData.education_id" ng-focus="removeError(7)">
+            <option ng-repeat="education in educations" value="{{education.id}}">{{education.name}}</option>
+          </select>
+        </label><div class="my-error" id="error7"></div>
+
+        <label class="item item-input item-select field-firm_id">
+          <div class="input-label">
+            Фирма
+          </div>
+          <select ng-model="regData.firm_id" ng-focus="removeError(8)">
+            <option ng-repeat="firm in firms" value="{{firm.id}}" >{{firm.name}}</option>
+          </select>
+        </label><div class="my-error" id="error8"></div>
+
+        <label class="item item-input item-select field-pharmacy_id">
+          <div class="input-label">
+            Аптека
+          </div>
+          <select ng-model="regData.pharmacy_id" ng-focus="removeError(9)">
+            <option ng-repeat="pharmacy in pharmacies" value="{{pharmacy.id}}">{{pharmacy.name}}</option>
+          </select>
+        </label><div class="my-error" id="error9"></div>
+
+        <label class="item item-input item-select field-sex">
+          <div class="input-label">
+            Пол
+          </div>
+          <select ng-model="regData.sex" ng-focus="removeError(10)">
+            <option ng-repeat="sex in sexies" value="{{sex.id}}">{{sex.name}}</option>
+          </select>
+        </label><div class="my-error" id="error10"></div>
+        
+        <label class="ion-checkbox item item-checkbox" style="white-space: normal !important;">
+          <div class="checkbox checkbox-input-hidden disable-pointer-events checkbox-circle">
+            <input type="checkbox" ng-model="agreementCheck">
+            <i class="checkbox-icon"></i>
+          </div>
+          <div class="input-label">
+            Я соглашаюсь с правилами использования
+          </div>
+        </label> <div class="my-error"></div>
+
+        <!-- <div class="item"> -->
+          <button class="button button-block join-button" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        <!-- </div> -->
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

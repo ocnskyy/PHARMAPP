@@ -1,0 +1,45 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar>
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    
+    <ion-content class="menu-main-yoyo">
+      <ion-list class="menu-yoyo">
+        <ion-item menu-close href="#/app/user" class="user">
+          <div><img id="user_avatar" height="70px;">
+          <span>Добро пожаловать,</span>
+          <b id="user_name"></b></div>
+          <p id="user_education"></p>
+          <p id="user_pharm"></p>
+          <!-- <p id="user_city"></p> -->
+        </ion-item>
+        <ion-item menu-close href="#/app/main">
+          Главная
+        </ion-item>
+        <ion-item menu-close href="#/app/settings">
+          Настройки
+        </ion-item>
+        <ion-item menu-close href="#/app/gifts">
+         Подарки
+        </ion-item>
+        <ion-item menu-close href="#/app/competitions">
+          Конкурсы
+        </ion-item>
+          <ion-item menu-close href="#/login">
+            Выход
+          </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

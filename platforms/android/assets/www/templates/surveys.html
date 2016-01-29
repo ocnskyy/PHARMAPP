@@ -1,0 +1,19 @@
+<ion-view view-title="Анкеты">
+  <ion-content class="survey-field">
+
+    <div class="survey">
+    	<div class="col col-33" ng-repeat="survey in surveys" ng-click="openQuestions({{survey.id}})" style="display:inline-block;background: url({{survey.image}});">
+    		<!-- <img src="{{survey.image}}" alt="havent loaded"> -->
+    		<div class="footer row">
+    			
+    			<div>{{survey.title}}</div>
+    			<div>
+    				<div class="points">
+    					{{survey.points}}
+    				</div>
+    			</div>	
+    		</div>
+    	</div>
+    </div>
+  </ion-content>
+</ion-view>

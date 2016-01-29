@@ -1,0 +1,15 @@
+<ion-view view-title="Семинары">
+  <ion-content class="survey-field">
+
+    <div class="survey">
+    	<div class="col col-33" ng-repeat="seminar in seminars" ng-click="openSeminars({{seminar.id}})" style="display:inline-block;background: url({{seminar.image}});">
+    		<!-- <img src="{{survey.image}}" alt="havent loaded"> -->
+    		<div class="footer row">
+    			
+    			<div class="seminar-title">{{seminar.title}}</div>
+    				
+    		</div>
+    	</div>
+    </div>
+  </ion-content>
+</ion-view>
